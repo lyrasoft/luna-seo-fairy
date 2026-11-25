@@ -7,7 +7,10 @@
     "minimum-stability": "beta",
     "require": {
         "php": ">=8.4.6",
-        "windwalker/core": "^4.2"
+        "windwalker/core": "^4.2",
+        "windwalker/unicorn": "^1.2",
+        "lyrasoft/luna": "*",
+        "webmozart/glob": "^4.0"
     },
     "require-dev": {
         "windwalker/framework": "dev-master",
@@ -27,7 +30,12 @@
         "windwalker": {
             "packages": [
                 "Lyrasoft\\SeoFairy\\SeoFairyPackage"
-            ]
+            ],
+            "assets": {
+                "vendors": {
+                    "codemirror": "^5.0"
+                }
+            }
         }
     }
 }
