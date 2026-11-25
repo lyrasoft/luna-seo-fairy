@@ -1,0 +1,33 @@
+{
+    "name": "lyrasoft/seo-fairy",
+    "type": "windwalker-package",
+    "description": "SEO helper package for Windwalker.",
+    "homepage": "https://github.com/lyrasoft/seo-fairy",
+    "license": "MIT",
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=8.4.6",
+        "windwalker/core": "^4.2"
+    },
+    "require-dev": {
+        "windwalker/framework": "dev-master",
+        "windwalker/core": "dev-master",
+        "friendsofphp/php-cs-fixer": "^3.95"
+    },
+    "scripts": {
+        "cs-check": "php-cs-fixer check",
+        "cs-fix": "php-cs-fixer fix"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lyrasoft\\SeoFairy\\": "src/"
+        }
+    },
+    "extra": {
+        "windwalker": {
+            "packages": [
+                "Lyrasoft\\SeoFairy\\SeoFairyPackage"
+            ]
+        }
+    }
+}
